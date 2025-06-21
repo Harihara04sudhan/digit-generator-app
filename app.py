@@ -69,4 +69,4 @@ if st.button("Generate Images"):
     cols = st.columns(num_images_to_generate)
     for i, image_tensor in enumerate(generated_images):
         with cols[i]:
-            st.image(image_tensor.squeeze().numpy(), caption=f"Sample {i+1}", use_column_width=True)
+            st.image(image_tensor.squeeze().numpy(), caption=f"Sample {i+1}", use_container_width=True)
